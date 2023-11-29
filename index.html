@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sunrise Sunset Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="container">
+        <h1 class="app-title">Sunrise Sunset Dashboard</h1>
+        <div class="search-container">
+          <label for="locationInput" class="label">Enter your location:</label>
+          <div class="search">
+            <input
+              type="text"
+              id="locationInput"
+              class="input"
+              placeholder="Eg: Chicago"
+            />
+            <button id="getCurrentLocation" class="button">
+              <i class="fas fa-location-arrow"></i> Current Location
+            </button>
+          </div>
+          <div class="button-container">
+            <button id="getSunrise" class="button sunrise-button">
+              <i class="fas fa-sun"></i> Sunrise
+            </button>
+            <button id="getSunset" class="button sunset-button">
+              <i class="fas fa-moon"></i> Sunset
+            </button>
+          </div>
+        </div>
+
+        <div id="result" class="result-container"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
